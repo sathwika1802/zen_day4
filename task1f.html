@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+( function(arraya,arrayb){
+    var array1=arraya.sort(function(a,b){           //sorting the 1st array   
+    return a-b;
+})
+var length=array1.length;                       //finding the of array1
+
+if(length%2!=0){                                //if there are odd number of terms
+    var med=((length+1)/2)-1;                   //median is the mid tem
+    console.log(array1[med]);
+}
+else{                                           //if there are even number of terms
+    var l1=(length/2)-1;
+    var l2=l1+1;
+    var median=(parseInt(array1[l1])+parseInt(array1[l2]))/2;           //median is average of middle terms
+    console.log(median);
+}
+var array2=arrayb.sort(function(a,b){
+    return a-b;
+})
+var length1=array2.length;
+
+if(length1%2!=0){
+    var med1=((length1+1)/2)-1;
+    console.log(array2[med1]);
+}
+else{
+    var ln1=(length1/2)-1;
+    
+    var ln2=parseInt(ln1)+1;
+    
+   
+    var median1=(parseInt(array2[ln1])+parseInt(array2[ln2]))/2;
+    console.log(median1);
+}
+})
+([1,2,3,4,5],[1,2,3,4,5,6])
+
+
+var medians=function(arrayx,arrayy){
+var array1=arrayx.sort(function(a,b){           //sorting the 1st array   
+    return a-b;
+})
+var length=array1.length;                       //finding the of array1
+
+if(length%2!=0){                                //if there are odd number of terms
+    var med=((length+1)/2)-1;                   //median is the mid tem
+    console.log(array1[med]);
+}
+else{                                           //if there are even number of terms
+    var l1=(length/2)-1;
+    var l2=l1+1;
+    var median=(parseInt(array1[l1])+parseInt(array1[l2]))/2;           //median is average of middle terms
+    console.log(median);
+}
+var array2=arrayy.sort(function(a,b){
+    return a-b;
+})
+var length1=array2.length;
+
+if(length1%2!=0){
+    var med1=((length1+1)/2)-1;
+    console.log(array2[med1]);
+}
+else{
+    var ln1=(length1/2)-1;
+    
+    var ln2=parseInt(ln1)+1;
+    
+   
+    var median1=(parseInt(array2[ln1])+parseInt(array2[ln2]))/2;
+    console.log(median1);
+}
+}
+medians([1,2,3,4,5],[1,2,3,4,5,6])
+
+
+    
+
+    </script>
+</body>
+</html>

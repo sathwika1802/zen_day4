@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function(arr){
+    var count;                          //defining a counting variable
+    var array="";                       //an open arrar to store primes
+        for(i=0;i<arr.length;i++){
+           count=0;                      //intialising at 0
+            for(j=1;j<=+arr[i];j++){
+                
+                if( +arr[i]%j==0){        //checkig if any number lesser than tha number ar divisible
+                    count++;              //if yes increase the count
+                    
+                }
+                
+            }
+            if(count==2){                   //count=2 as its divisible by its self and 1
+                array+=arr[i]+" ";           //storing primes in an array
+            }
+            
+        }
+    console.log(array);                     //printing primes
+})
+(
+  [1,2,3,4,5]  )
+  var prime=function(arr){
+      var count;                            //defining a counting variable
+    var array="";                           //an open arrar to store primes
+        for(i=0;i<arr.length;i++){
+           count=0;                         //intialising at 0
+            for(j=1;j<=+arr[i];j++){
+                
+                if( +arr[i]%j==0){           //checkig if any number lesser than tha number ar divisible
+                    count++;                //if yes increase the count
+                    
+                }
+                
+            }
+            if(count==2){                   //count=2 as its divisible by its self and 1
+                array+=arr[i]+" ";          //storing primes in an array
+            }
+            }
+            
+        }
+    console.log(array);                     //printing primes
+  }
+  prime([1,2,3,4,5])
+    </script>
+</body>
+</html>

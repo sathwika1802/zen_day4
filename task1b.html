@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function (str) {
+	str = str.toLowerCase().split(' ');
+	for (let i = 0; i < str.length; i++) {
+		str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+	}
+	console.log(str.join(' '));
+})
+(
+    "guvi learning platform"
+    );
+
+var caps=function(str){
+    str = str.toLowerCase().split(' ');
+	for (let i = 0; i < str.length; i++) {
+		str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+	}
+	console.log(str.join(' '));
+}
+caps("guvi learning platform")
+    </script>
+</body>
+</html>

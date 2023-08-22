@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function(array){
+    var sorted=array.sort(function(a,b){            //sorting th array
+    return a-b;
+})
+var arr="";
+for(i=0;i<array.length;i++){
+    if(array[i]!=array[i+1]){                       //after sorting if the next element is not to th present element push the present element
+        arr+=array[i]+" ";                          //pushing the original elements
+    }
+}
+console.log(arr);                                   //printing the originals
+}
+    )
+    ([1,2,3,4,4,3,5,6,5])
+
+    var duplicate=function(array){
+var sorted=array.sort(function(a,b){
+    return a-b;
+})
+var arr="";
+for(i=0;i<array.length;i++){
+    if(array[i]!=array[i+1]){
+        arr+=array[i]+" ";
+    }
+}
+console.log(arr);
+}
+duplicate([1,2,3,4,4,3,5,6,5]);
+    </script>
+        
+</body>
+</html>

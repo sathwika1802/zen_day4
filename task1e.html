@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function palandrome(array){
+    var arr="";       //initialising an array to store palandromes
+for(i=0;i<array.length;i++){
+    
+    var reverse=array[i].toString().split("").reverse().join("").toString();  //element =>strin=>reverse=>joining back=>string
+
+if(reverse==array[i]){                                  //checking palandromes
+    arr+=array[i]+" ";                                  //storing palandromes
+}
+
+}
+console.log(arr.trim());                                //printing palandromes
+})
+([1234,1345,11,121]
+    )
+    
+var palandromes=function(array){
+    var arr="";       //initialising an array to store palandromes
+for(i=0;i<array.length;i++){
+    
+    var reverse=array[i].toString().split("").reverse().join("").toString();  //element =>strin=>reverse=>joining back=>string
+
+if(reverse==array[i]){                                  //checking palandromes
+    arr+=array[i]+" ";                                  //storing palandromes
+}
+}
+console.log(arr.trim());  
+}
+palandromes([1234,1345,11,121])
+
+    </script>
+</body>
+</html>
