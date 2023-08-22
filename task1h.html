@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ( function(array,k){
+    var n=array.length;             //length of array
+var arr="";                         //creating an empty array
+if(k<n){                            //if number of rotions less than length of array
+for(i=n-k;i<n;i++){                 //passing the last k elements in an empty array
+    arr+=array[i]+" ";
+ 
+}
+    for(j=0;j<n-k;j++){             //passing first n-k elements
+        arr+=array[j]+" ";
+    }
+    console.log(arr.trim());         //printing rotated array
+}
+if(n==k){
+    console.log(array);
+}
+if(k>n){                             //if no of rotation greater than length of an array first n rotations forms back the array so performing k-n rotations
+    k1=k-n;
+    for(l=n-k1;l<n;l++){
+    arr+=array[l]+" ";
+ 
+}
+    for(m=0;m<n-k1;m++){
+        arr+=array[m]+" ";
+    }
+    console.log(arr.trim());
+}
+})
+([1,2,3,4,5,6,7],11);
+
+
+var rotation=function(array,k){
+var n=array.length;
+var arr="";
+if(k<n){
+for(i=n-k;i<n;i++){
+    arr+=array[i]+" ";
+ 
+}
+    for(j=0;j<n-k;j++){
+        arr+=array[j]+" ";
+    }
+    console.log(arr.trim())
+}
+if(n==k){
+    console.log(array.join(" "));
+}
+if(k>n){
+    k1=k-n;
+    for(l=n-k1;l<n;l++){
+    arr+=array[l]+" ";
+ 
+}
+    for(m=0;m<n-k1;m++){
+        arr+=array[m]+" ";
+    }
+    console.log(arr.trim())
+}
+}
+rotation([1,2,3,4,5,6,7],7)
+
+
+
+    </script>
+</body>
+</html>
